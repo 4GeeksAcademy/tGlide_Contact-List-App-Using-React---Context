@@ -37,7 +37,12 @@ export const Demo = () => {
 			<br />
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
+				
 			</Link>
+			<br />
+			<Link to="/todos">
+				<button className="btn btn-secundary">Go to Todos!</button>
+				</Link>
 		</div>
 	);
 };
