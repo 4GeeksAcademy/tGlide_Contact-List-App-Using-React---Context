@@ -19,4 +19,4 @@ const ContactCard = () => {
     )
 }
 
-export default ContactCrad;
+export default ContactCard;
