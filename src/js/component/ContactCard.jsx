@@ -1,22 +1,21 @@
 import React from "react";
 
-const ContactCard = () => {
-    return (
-<>
-<div>
-    <div className="contact">
-        <img />
-        <div className="Contact-info">
-        <p className="contact-name">Tony Nunez</p>
-        <p className="contact-phone">305-900-0149</p>
-        <p className="contact-address">123 Mia terr</p>
-        <p className="contact-email">tony@email.com</p>
-        </div>    
-        </div>    
-    </div>
-</>
-
-    )
-}
+const ContactCard = ({ name, phone, address, email }) => {
+  return (
+    <>
+      <div>
+        <div className="contact">
+          <img src="https://xsgames.co/randomusers/avatar.php?g=male" />
+          <div className="Contact-info">
+            <p className="contact-name">{name}</p>
+            <p className="contact-phone">{phone}</p>
+            <p className="contact-address">{address}</p>
+            <p className="contact-email">{email}</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default ContactCard;

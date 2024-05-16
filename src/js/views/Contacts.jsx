@@ -1,23 +1,30 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import ContactCard from "../component/ContactCard.jsx";
 import { Context } from "../store/appContext.js";
 
 const Contacts = () => {
-const {store, actions } = useContext(Context);
+  const { store, actions } = useContext(Context);
 
-console.log(store)
-
-    return (
-<>
-<div>
-    <ContactCard />
-    <ContactCard />
-
-
-</div>
-</>
-
-    )
-}
+  return (
+    <div>
+      {store.contacts.map((contact) => {
+        return (
+          <div key={contact.id}>
+            <ContactCard
+              name={contact.name}
+              phone={contact.phone}
+              address={contact.address}
+              email={contact.email}
+            />
+            <button>Update</button>
+            <button onClick={() => actions.deleteContact(contact.id)}>
+              Delete
+            </button>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default Contacts;

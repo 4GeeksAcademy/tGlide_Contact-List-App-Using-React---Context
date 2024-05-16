@@ -4,7 +4,7 @@ const AddContact = () => {
     return (
 <>
 <div>
-    Add Conftact section.
+    Add Contact section.
 </div>
 </>
 
