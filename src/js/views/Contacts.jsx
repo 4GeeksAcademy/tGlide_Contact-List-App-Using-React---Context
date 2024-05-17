@@ -16,6 +16,7 @@ const Contacts = () => {
               address={contact.address}
               email={contact.email}
             />
+            <button >Create</button>
             <button>Update</button>
             <button onClick={() => actions.deleteContact(contact.id)}>
               Delete

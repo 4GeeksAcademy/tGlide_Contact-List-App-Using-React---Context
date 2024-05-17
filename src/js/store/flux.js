@@ -28,7 +28,6 @@ const getState = ({ getStore, getActions, setStore }) => {
       // 	setStore({ demo: demo });
       // }
 
-      //Get Single Agenda
       loadAgendaContacts: async () => {
         const response = await fetch(
           "https://playground.4geeks.com/contact/agendas/tglide/contacts"
@@ -52,6 +51,10 @@ const getState = ({ getStore, getActions, setStore }) => {
           throw new Error(response.status, response.statusText);
         }
         getActions().loadAgendaContacts();
+      },
+
+      createContact: async () => {
+        
       },
     },
   };
