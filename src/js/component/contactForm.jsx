@@ -64,7 +64,7 @@ const ContactForm = () => {
                     <label for="inputAddress" className="col-sm-2 col-form-label">Address</label>
                 </div>
                 <div className="">
-                    <button onClick={() => handleSubmit()} type="submit" className="btn btn-primary">Save</button>
+                    <button onClick={() => handleSubmit()} type="submit" className="btn btn-secondary">Save</button>
                 </div>
             </form>
             <h1></h1>
