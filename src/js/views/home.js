@@ -1,15 +1,11 @@
 import React from "react";
-import Contacts from "./Contacts.jsx";
-import AddContact from "./AddContact.jsx";
 import "../../styles/home.css";
+import Contacts from "../component/contacts.jsx";
+import ContactForm from "../component/contactForm.jsx";
 
 export const Home = () => (
-	<div className="text-center mt-5">
-	<div>
-		<AddContact />
-	</div>
-	<div>
+	<div className="text-center m-auto w-75">
 		<Contacts />
-	</div>
+		
 	</div>
 );
